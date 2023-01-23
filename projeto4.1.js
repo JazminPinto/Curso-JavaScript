@@ -66,3 +66,7 @@ var b = 7;
 console.log(a < b); //false
 console.log(b < a); //true
 
+console.log(5 < 5); //false
+console.log(5 <= 5); //true
+
+
