@@ -50,3 +50,6 @@ var b = 17;
 
 console.log(a > b); //true
 console.log(b > a); //false
+
+console.log(5 > 5); //false
+console.log(5 >= 5); //true
