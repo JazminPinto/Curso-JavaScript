@@ -34,3 +34,41 @@ var a = 1;
 
 // (a > 5) && (a < 10) --> false && false --> false
 console.log((a > 5) && (a == 3));
+
+
+/*
+    Tabla de verdad del operador OR (||)
+    Para: X || Y
+    | X | Y | X || Y |
+    ------------------
+    | T | T |   T    |
+    | T | F |   T    |
+    | F | T |   T    |
+    | F | F |   F    |
+    La expresion es verdadera si alguno de los dos operandos o ambs son verdaderos.
+*/
+
+console.log(true || true);
+console.log(true || false);
+console.log(false || true);
+console.log(false || false);
+
+var a = 8;
+
+// (a < 5) || (a > 15) --> false || false --> false
+console.log((a < 5) || (a > 15));
+
+var a = 2;
+
+// (a < 5) || (a > 15) --> true || false --> true
+console.log((a < 5) || (a > 15));
+
+var a = 20;
+
+// (a < 5) || (a > 15) --> false || true --> true
+console.log((a < 5) || (a > 15));
+
+var a = 5;
+
+// (a < 5) || (a > 15) --> true || true --> true
+console.log((a == 5) || (a < 15));
