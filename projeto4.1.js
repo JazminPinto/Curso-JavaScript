@@ -10,7 +10,7 @@ console.log (a === b); //operador igualdad estricta --true
 b = 8 ;
 
 console.log(a == b); //false
-console.log(a === b); //falso
+console.log(a === b); //false
 
 b = '5';
 
@@ -22,3 +22,9 @@ b = 'JavaScrip';
 
 console.log(a == b); //true
 console.log(a === b); //true
+
+console.log(9 != 6); //true (!= distinto) 
+console.log(9 != 9); //false
+console.log('JavaScript' != 'JavaScript'); //false
+
+console.log([1, 2, 3] != [1, 2, 3]); //true
