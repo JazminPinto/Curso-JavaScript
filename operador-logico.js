@@ -107,3 +107,34 @@ if (estacion == 'invierno'){
     console.log('Si, me encanta el invierno')
 }
 console.log('despues del condicional...')
+
+
+
+if(true){
+    console.log('la condicion del ejemplo es verdadera');
+} else{
+    console.log('la condicion es falsa');
+}
+
+if(false){
+    console.log('la condicion es verdadera');
+} else{
+    console.log('la condicion del ejemplo es falsa');
+}
+
+var x = 5 ;
+
+if(x < 2){
+    console.log('la condicion es verdadera');
+} else{
+    console.log('la condicion es falsa');
+}
+
+
+var estacion = 'invierno';
+
+if(estacion === 'verano'){
+    console.log('Comenzo el verano, ya podemos ir a la playa');
+} else{
+    console.log('Ya quiero que llegue el verano para poder ir a la playa');
+}
