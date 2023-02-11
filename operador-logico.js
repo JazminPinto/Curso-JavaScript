@@ -94,3 +94,16 @@ console.log(!(a > 5));
 
 // !(a < 5) --> !false --> true
 console.log(!(a < 5))
+
+var estacion = 'invierno'
+
+if (estacion == 'invierno'){
+    console.log('Si, me encanta el invierno')
+}
+
+var estacion = 'verano'
+
+if (estacion == 'invierno'){
+    console.log('Si, me encanta el invierno')
+}
+console.log('despues del condicional...')
