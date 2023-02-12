@@ -76,3 +76,22 @@ console.log(mochila.contenido);
 
 mochila.contenido = ['nuevo contenido'];
 console.log(mochila.contenido)
+
+
+//agregar propiedades
+
+var curso = {
+    'titulo': 'Aprende JavaScript desde cero',
+    'idioma': 'Español',
+    'duracion': 30
+};
+
+curso.vistas = 34500, //para agregar propiedades
+console.log(curso.vistas)
+
+console.log(curso);
+
+//tambien se puede crear utilizando corchetes.
+
+curso['vistas'] = 34501;
+console.log(curso.vistas);
