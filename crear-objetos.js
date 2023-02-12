@@ -55,3 +55,24 @@ var resultados = {
 var posicion = 2;
 
 console.log(resultados[posicion]);
+
+
+//actualizar variables.
+
+var mochila = {
+    'color': 'azul',
+    'tamaño': 'mediano',
+    'contenido': ['botella de agua', 'cuaderno']
+};
+console.log(mochila.color); // azul
+
+mochila.color = 'verde'; //actualizar valor
+console.log(mochila.color);
+
+console.log(mochila.contenido);
+
+mochila.contenido.push('lapiz') //push nos permite agregar um elemento al final del arreglo
+console.log(mochila.contenido);
+
+mochila.contenido = ['nuevo contenido'];
+console.log(mochila.contenido)
