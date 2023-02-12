@@ -111,3 +111,48 @@ console.log(clasificarVolumen(3));
 console.log(clasificarVolumen(4));
 console.log(clasificarVolumen(5));
 console.log(clasificarVolumen(6));
+
+
+function seleccionarIdiomas(valor) {
+    var idiomas;
+
+    if (valor == 1) {
+        idiomas = 'español';
+    } else if (valor == 2){
+        idiomas = 'frances';
+    } else if (valor == 3){
+        idiomas = 'italiano';
+    } else {
+        idiomas = 'ingles';
+    }
+    return idiomas;
+}
+console.log(seleccionarIdiomas(1));
+console.log(seleccionarIdiomas(2));
+console.log(seleccionarIdiomas(3));
+
+//se puede reemplazar el if, else if e else por switch, case, default e break, para obtener el mismo resultado
+
+function seleccionarIdiomas(valor) {
+    var idiomas;
+
+    switch (valor){
+        case  1:
+            idiomas = 'español';
+            break;
+        case 2:
+            idiomas = 'frances';
+            break;
+        case 3:
+            idiomas = 'italiano';
+            break;
+        default:
+            idiomas = 'ingles';
+            break;
+    }
+        return idiomas;    
+}
+console.log(seleccionarIdiomas(1));
+console.log(seleccionarIdiomas(2));
+console.log(seleccionarIdiomas(3));
+
