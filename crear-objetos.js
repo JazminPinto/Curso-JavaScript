@@ -11,7 +11,6 @@ var miObjeto = {
 */
 
 //Acceder a propiedades: Notacion de punto.
-
 var miPerro = {
     'nombre': 'Gino',
     'edad': 5,
@@ -58,7 +57,6 @@ console.log(resultados[posicion]);
 
 
 //actualizar variables.
-
 var mochila = {
     'color': 'azul',
     'tamaño': 'mediano',
@@ -79,7 +77,6 @@ console.log(mochila.contenido)
 
 
 //agregar propiedades
-
 var curso = {
     'titulo': 'Aprende JavaScript desde cero',
     'idioma': 'Español',
@@ -95,3 +92,17 @@ console.log(curso);
 
 curso['vistas'] = 34501;
 console.log(curso.vistas);
+
+
+//Eliminar propiedades
+var curso = {
+    'titulo': 'Aprende JavaScript desde cero sin dificultad',
+    'idioma': 'Español y Portugues',
+    'duracion': 45
+};
+console.log(curso);
+
+delete curso.duracion;
+console.log(curso);
+
+
