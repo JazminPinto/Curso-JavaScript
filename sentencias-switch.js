@@ -156,3 +156,22 @@ console.log(seleccionarIdiomas(1));
 console.log(seleccionarIdiomas(2));
 console.log(seleccionarIdiomas(3));
 
+//retornar valores booleanos
+
+function esMenorQue(a,b){
+    if (a < b ){
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log(esMenorQue(3, 6))
+console.log(esMenorQue(6, 3))
+
+//se puede cambiar if, else a valores booleanos 
+
+function esMenorQue(a,b){
+    return a < b;
+}
+console.log(esMenorQue(3, 6))
+console.log(esMenorQue(6, 3))
