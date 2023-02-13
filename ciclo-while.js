@@ -65,3 +65,21 @@ var miArregloFor = []
         miArregloFor.push(i);
     }
     console.log(miArregloFor);
+
+
+//Ciclos For: Contar hacia atras
+for (var i = 15; i >= 10; i--) {
+    console.log(i);
+}
+ // o asi
+for (var i = 15; i >= 10; i -= 2) {
+    console.log(i);
+}
+
+
+var miArregloForPush = []
+for (var i = 10; i = 0; i -= 2) {
+    miArregloForPush.push(i);
+}
+
+console.log(miArregloForPush);
