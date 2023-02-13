@@ -288,3 +288,5 @@ console.log(primeraFlor)
 
 var segundoArbol = misPlantas[1].lista[1];
 console.log(segundoArbol)
+
+
