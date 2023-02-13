@@ -30,3 +30,30 @@ while (numeros.length > 4) {
     numeros.pop();
 }
 console.log(numeros);
+
+
+//Ciclo for
+var miOtroArreglo = [];
+
+for (var i = 0; i < 10; i++) {
+    miOtroArreglo.push(i);
+}
+console.log(miOtroArreglo);
+
+//puede ser asi tambien 
+
+var miOtroArreglo = [];
+
+for (var i = 0; i < 10; i = i + 2) {
+    miOtroArreglo.push(i);
+}
+console.log(miOtroArreglo);
+ 
+//o asi
+
+var miOtroArreglo = [];
+
+for (var i = 0; i < 10; i += 2) {
+    miOtroArreglo.push(i);
+}
+console.log(miOtroArreglo);
