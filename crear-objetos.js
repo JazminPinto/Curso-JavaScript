@@ -263,3 +263,28 @@ console.log(miReceta.ingredientes.cobertura.mantequilla + ' con punto');
 console.log(miReceta.ingredientes.cobertura['mantequilla'] + ' con corchete');
 
 
+//Arreglos anidados.
+var misPlantas = [
+    {
+        tipo: 'flores',
+        lista: [
+            'rosas',
+            'tulipanes',
+            'dientes de leon'
+        ]
+    },
+    {
+        tipo: 'arboles',
+        lista: [
+            'aberto',
+            'pino',
+            'abedul'
+        ]
+    }
+];
+
+var primeraFlor = misPlantas[0].lista[0];
+console.log(primeraFlor)
+
+var segundoArbol = misPlantas[1].lista[1];
+console.log(segundoArbol)
