@@ -57,3 +57,11 @@ for (var i = 0; i < 10; i += 2) {
     miOtroArreglo.push(i);
 }
 console.log(miOtroArreglo);
+
+
+//Ciclo For: numeros impares
+var miArregloFor = []
+    for (var i = 1; i < 20; i += 2){
+        miArregloFor.push(i);
+    }
+    console.log(miArregloFor);
