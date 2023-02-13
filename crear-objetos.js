@@ -158,3 +158,32 @@ console.log(buscarElementoQuimico('Cl'));
 console.log(buscarElementoQuimico('He'));
 console.log(buscarElementoQuimico('B'));
 console.log(buscarElementoQuimico('Li'));
+
+
+//Verificar propiedades
+var miCuaderno = {
+    'color': 'verde',
+    'categoria': 3,
+    'precio': 4.56
+};
+
+console.log(miCuaderno.hasOwnProperty('color')); //metodo hasOwnProperty (tiene esta propiedad) es muy util cuando se trabaja con condicionales
+console.log(miCuaderno.hasOwnProperty('origen'))
+
+
+function verificarPropiedad(obj, propiedad) {
+    if(obj.hasOwnProperty(propiedad)){
+        return'Propiedad: ' + obj[propiedad];
+    } else {
+        return 'El objeto no tiene esta propiedad.';
+    }
+}
+
+var miCuaderno = {
+    'color': 'verde',
+    'categoria': 3,
+    'precio': 4.56
+};
+
+console.log(verificarPropiedad(miCuaderno, 'color'))
+console.log(verificarPropiedad(miCuaderno, 'origen'))
