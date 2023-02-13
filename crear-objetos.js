@@ -187,3 +187,45 @@ var miCuaderno = {
 
 console.log(verificarPropiedad(miCuaderno, 'color'))
 console.log(verificarPropiedad(miCuaderno, 'origen'))
+
+
+//Objetos Complejos
+var ordenesDePizzas = [
+    {
+        'tipo': 'Margarita',
+        'tamaño': 'indiviual',
+        'precio': 5.67,
+        'toppings': [
+            'extra queso',
+            'champiõnes',
+            'piña'
+        ],
+        'paraLlevar': true
+    },
+    {
+        'tipo': 'Cuatro Quesos',
+        'tamaño': 'familiar',
+        'precio': 18.34,
+        'toppings': [
+            'extra queso',
+            'pimenton'
+        ],
+        'paraLlevar': false
+    },
+    {
+        'tipo': 'Napolitana',
+        'tamaño': 'invidual',
+        'precio': 6.78,
+        'topping':[],
+        'paraLlevar': true
+    }
+];
+
+console.log(ordenesDePizzas[0].tipo);
+console.log(ordenesDePizzas[0]['tipo']);
+console.log(ordenesDePizzas[1].tipo);
+console.log(ordenesDePizzas[1]['tipo']);
+console.log(ordenesDePizzas[2].tipo);
+console.log(ordenesDePizzas[2]['tipo']);
+
+//Objetos Anidados.
