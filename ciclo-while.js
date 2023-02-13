@@ -83,3 +83,15 @@ for (var i = 10; i = 0; i -= 2) {
 }
 
 console.log(miArregloForPush);
+
+
+//Iterar sobre un arreglo con un Ciclo For
+var miArregloIterar = [4, 6, 8, 2];
+var total = 0;
+
+for (var i = 0; i < miArregloIterar.length; i++) {
+    console.log('iteracion ' + i); //se puede usar console.log dentro de un ciclo solo para ver como funciona el ciclo, pero no es necesario
+    console.log(miArregloIterar[i]);
+    total += miArregloIterar[i];
+}
+console.log(total);
