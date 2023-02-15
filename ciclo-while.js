@@ -95,3 +95,21 @@ for (var i = 0; i < miArregloIterar.length; i++) {
     total += miArregloIterar[i];
 }
 console.log(total);
+
+var lenguajes = ['JavaScript', 'Python', 'Java', 'C++'];
+for (var i = 0; i < lenguajes.length; i++) {
+    console.log(lenguajes[i].toUpperCase());
+}
+//toUpperCase es para colocar todas las letras en mayuscula
+
+function contarNumerosPares(arreglito) {
+    var total = 0;
+
+    for (var i = 0; i < arreglito.length; i++ ){
+        if (arreglito[i] % 2 == 0) {
+            total++;
+        }
+    }
+    return total;
+}
+console.log(contarNumerosPares([5, 3, 1, 2, 4, 6, 8, 9]));
