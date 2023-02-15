@@ -129,3 +129,21 @@ for (var i = 0; i <arreglo1.length; i++) {
         console.log(arregloAnidado[j]); //Elemento
     }
 }
+
+
+//Ciclos 'do...while' ('hacer tal cosa mientras una accion es verdadera)
+
+var x = 16;
+
+do {
+    console.log(x);
+    x++ //17
+} while (x < 10) 
+
+//vai dar o mesmo resultado, mas deve ser usado como en el primer ejemplo
+
+x = 16
+while ( x < 10) {
+    console.log(x);
+    x++;
+}
