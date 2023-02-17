@@ -347,3 +347,228 @@ console.log(minimaHoy, maximaHoy)
 
 
 //sintaxis de desestructuracion: arreglos
+var a;
+var b;
+var c;
+
+[a, b, , , c] = [1, 2, 3, 4, 5];
+
+console.log(a);
+console.log(b);
+console.log(c);
+
+var e = 8;
+var f = 6;
+
+[f, e] = [e, f];
+console.log('e: ' + e);
+console.log('f: ' + f);
+
+
+//Sintaxis de Desestructuracion con el Operador rest
+var g;
+var h;
+var arr;
+
+[g, h, ...arr] = [1, 2, 3, 4, 5, 6, 7];
+
+console.log(a);
+console.log(b);
+console.log(arr);
+
+
+const arregloInicial = [1, 2, 3, 4, 5, 6, 7, 8];
+
+function removerTresPrimerosElementos(arregloo){
+    const [ , , , ...nuevoArreglo] = arregloo;
+    return nuevoArreglo;
+}
+const arregloFinal = removerTresPrimerosElementos(arregloInicial);
+console.log(arregloFinal);
+
+
+//Sintaxis de Desestructuracion: Pasar Objeto como Argumento
+var nuevoPerfilCliente = {
+    nombre: 'Jane Doe',
+    edad: 24,
+    nacionalidad: 'Española',
+    ubicacion: 'Españal'
+};
+/*
+const actualizarPerfil = (informacionDePerfil) => {
+    const {nombre, edad, nacionalidad, ubicacion} = informacionDePerfil;
+    console.log(nombre);
+    console.log(edad);
+    console.log(nacionalidad);
+    console.log(ubicacion);
+};
+actualizarPerfil(nuevoPerfilCliente);
+
+*/
+
+//asi 
+
+/*
+var nuevoPerfilCliente = {
+    nombre: 'Jane Doe',
+    edad: 24,
+    nacionalidad: 'Española',
+    ubicacion: 'Españal'
+};
+
+
+const actualizarPerfil = (informacionDePerfil) => {
+    console.log(informacionDePerfil);
+};
+actualizarPerfil(nuevoPerfilCliente);
+*/
+
+// o asi, mas practico
+
+var nuevoPerfilCliente = {
+    nombre: 'Jane Doe',
+    edad: 24,
+    nacionalidad: 'Española',
+    ubicacion: 'Españal'
+};
+
+
+const actualizarPerfil = ({nombre, edad, nacionalidad, ubicacion}) => {
+    console.log(nombre);
+    console.log(edad);
+    console.log(nacionalidad);
+    console.log(ubicacion);
+};
+actualizarPerfil(nuevoPerfilCliente);
+
+
+
+const estadisticas = {
+    max: 56.78,
+    desviacionEstandar: 4.34,
+    mediana: 34.54,
+    moda: 23.87,
+    min: -0.75,
+    promedio: 35.85
+};
+
+const mitad = ({max, min}) => (max + min) / 2.0;
+console.log(mitad(estadisticas));
+
+
+//Plantillas Literales
+
+/*
+
+Plantillas literales o Plantillas de cadenas.
+
+Caracteristicas:
+-Se usa el acento invertido (backtick) ` en lugar de comillas.
+-Pueden contener comillas simples y dobles.
+-Las lineas se preservan como se escribe ${variable}.
+-Dentro de ${} tambien puedes escribir expresiones.
+
+*/
+
+var h = 6;
+console.log(`El valor de a es ${h}`);
+
+var nombree = "Nora"
+var eedad = 6;
+
+console.log(`Mi nombre es ${nombree} y tengo ${eedad} años.`);
+
+var miArregloo = [1, 2, 3, 4];
+console.log(`El arreglo es ${JSON.stringify(miArregloo)}`)
+
+
+var persona = {
+    nombr: 'Gino Cass',
+    años: 10
+};
+const SALUDO = `Hola! Mi nombre es ${persona.nombr} y tengo ${persona.años} años.`
+
+console.log(SALUDO);
+
+
+//Crear Objetos de forma concisa
+/*
+const crearPersona = (nome, edade, idioma) => {
+    return {
+        nome: nome,
+        edade: edade,
+        idioma: idioma
+    };
+};
+console.log(crearPersona('Gino Smith', 28, 'Español'));
+
+*/ 
+
+ //asi para ser en una sola linea
+
+const crearPersona = (nome, edade, idioma) => ({nome, edade, idioma});
+
+console.log(crearPersona('Gino Smith', 28, 'Español'));
+
+
+//Metodos
+const pessoa = {
+    nome: 'Isabel',
+    presentarse: function(){ //podemos quitar :function y no va a pasar nada, se realiza un codigo mas consiso
+        return`Hola! Mi nombre es ${this.nome}`;
+    }
+};
+
+console.log(pessoa.presentarse());
+
+
+//Definir una clase
+class TransbordadorEspacial {
+    constructor(planeta){
+        this.planeta = planeta;
+    }
+}
+
+var zeus = new TransbordadorEspacial('Jupiter');
+console.log(zeus.planeta);
+
+var apolo = new TransbordadorEspacial('Marte');
+console.log(apolo.planeta);
+
+
+class Mascota {
+    constructor(suNombre, suEdad) {
+        this.suNombre = suNombre;
+        this.suEdad = suEdad;
+    }
+}
+var miMascota = new Mascota ('Nora', 5);
+
+console.log(miMascota.suNombre);
+console.log(miMascota.suEdad); 
+
+
+//Getters y Setters 
+class Libro {
+    constructor (autor){
+        this._autor = autor; //propiedad privada, se coloca _ para que otro programador que no se debe editar
+    }
+//get = obtener
+    get autor() {
+       // console.log('Getter')
+        return this._autor;
+    }
+    
+    //set = actualiza valor
+    set autor(nuevoAutor){
+       // console.log('Setter')
+        this._autor = nuevoAutor;
+    }
+}
+
+const libro = new Libro('anonimo');
+console.log(libro.autor)
+
+
+libro.autor ='Gino Stmirh';
+console.log(libro.autor);
